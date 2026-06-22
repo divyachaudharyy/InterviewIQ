@@ -64,6 +64,7 @@ export async function getMe() {
         if (err.response?.status === 401) {
             return null
         }
+        console.log(err)
         throw err
     }
 
